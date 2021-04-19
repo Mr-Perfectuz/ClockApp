@@ -8,6 +8,7 @@ public class MyFrame extends JFrame {
     Calendar calendar;
     SimpleDateFormat timeFormat;
     JLabel timeLabel;
+    String time;
 
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,9 +18,8 @@ public class MyFrame extends JFrame {
         this.setResizable(false);
 
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
+        timeLabel = new JLabel();
 
-
-        this.setVisible(true);
 
     }
 }
